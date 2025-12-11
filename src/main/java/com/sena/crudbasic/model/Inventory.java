@@ -30,7 +30,7 @@ public class Inventory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     //Indicar que el campo es una columna
     @Column(name="id_inventory")
-    private int id;
+    private Integer id;
     @Column(name="name", length = 50)
     private String name;
 

@@ -31,9 +31,11 @@ public class Branch {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     //Indicar que el campo es una columna
     @Column(name="id_branch")
-    private int id;
+    private Integer id;
     @Column(name="name", length = 90)
     private String name;
+    @Column(name="address", length = 90)
+    private String address;
 
     //Una sucursal tiene muchos empleados
     @OneToMany(mappedBy = "branch")

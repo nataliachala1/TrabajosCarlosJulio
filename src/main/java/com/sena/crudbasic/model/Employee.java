@@ -33,7 +33,7 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     //Indicar que el campo es una columna
     @Column(name="id_employee")
-    private int id;
+    private Integer id;
     @Column(name="name", length = 50)
     private String name;
     @Column(name="lastName", length = 60)

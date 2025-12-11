@@ -1,0 +1,39 @@
+package com.sena.crudbasic.service;
+
+import java.util.List;
+
+/**
+ * Interfaz genérica para servicios CRUD.
+ * Define operaciones comunes para todas las entidades.
+ *
+ * @param <RequestDto> DTO para crear/actualizar
+ * @param <ResponseDto> DTO para respuestas
+ * @param <ID> Tipo del identificador (Long, Integer, etc.)
+ */
+public interface GenericService<RequestDto, ResponseDto, ID> {
+
+    /**
+     * Obtener todos los registros.
+     */
+    List<ResponseDto> findAll();
+
+    /**
+     * Buscar por ID.
+     */
+    ResponseDto findById(ID id);
+
+    /**
+     * Crear un nuevo registro.
+     */
+    ResponseDto create(RequestDto dto);
+
+    /**
+     * Actualizar un registro existente.
+     */
+    ResponseDto update(ID id, RequestDto dto);
+
+    /**
+     * Eliminar un registro.
+     */
+    void delete(ID id);
+}
