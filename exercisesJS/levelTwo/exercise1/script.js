@@ -1,7 +1,22 @@
-let clics = 0;
+// =====================================
+// LÓGICA
+// =====================================
+let clics = 0
 
-        document.getElementById("boton").addEventListener("click", function() {
-            clics++;
-        document.getElementById("contador").textContent = "Clics: " + clics;
+function incrementarClics() {
+    clics++
+    return clics
+}
 
-        });
+// =====================================
+// PRESENTACIÓN
+// =====================================
+function mostrarClics() {
+    let contador = document.getElementById("contador")
+    contador.textContent = "Clics: " + incrementarClics()
+}
+
+// =====================================
+// EVENTOS
+// =====================================
+document.getElementById("boton").addEventListener("click", mostrarClics)
