@@ -1,0 +1,66 @@
+:root {
+    --color-1: #8ad682;
+    --color-2: #2a95a0;
+    --color-3: #2ca58d;
+    --color-4: #84bc9c;
+    --color-5: #f2f2f2;
+}
+
+body {
+    background: linear-gradient(to bottom, );
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background: var(--color-5);
+    border-radius: 16px;
+    box-shadow: 0px 20px 40px rgba(0,0,0,0.3);
+    text-align: center;
+    max-width: 700px;
+    padding: 50px 40px;
+    width: 90%;
+}
+
+h1 {
+    color: var(--color-1);
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.btn-ejercicio {
+    background-color: var(--color-5);
+    color: rgb(34, 118, 61);
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+.btn-ejercicio:hover {
+    background-color: var(--color-4);
+    transform: scale(1.02);
+}
+.card {
+    padding: 16px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+}
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
